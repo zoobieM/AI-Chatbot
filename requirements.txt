@@ -1,0 +1,7 @@
+flask
+openai
+python-dotenv
+flask-cors
+flask
+openai>=1.0.0
+pip install python-dotenv

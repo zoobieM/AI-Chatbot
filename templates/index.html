@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbot</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="chat-container">
+
+    <div class="chat-header">
+        <h2>AI Chatbot</h2>
+        <button id="themeBtn">🌙</button>
+    </div>
+
+    <div id="chatBox" class="chat-box"></div>
+
+    <div class="controls">
+        <button id="micBtn">🎤 Speak</button>
+
+        <input type="file" id="fileInput" hidden>
+        <button id="fileBtn">📁 File</button>
+
+        <audio id="audioPlayer" hidden></audio>
+    </div>
+
+    <div class="input-area">
+        <input id="userInput" type="text" placeholder="Type your message..." onkeydown="if(event.key==='Enter') sendMessage()">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</div>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
